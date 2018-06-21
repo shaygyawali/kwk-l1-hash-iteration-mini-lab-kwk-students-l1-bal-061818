@@ -1,18 +1,23 @@
 
-def create_olympics_hash
-  # Implement this method so that it returns a hash with the data provided on README.md
+new_hash = { }
+olympics = {"sydney" => 2000, "athens" => 2004, "Beijing"=> 2008, "London" => 2012}
+
+olympics.each do |country, year|
+  puts "The #{country} summer olympics took place in #{year}"
 end
 
-def add_a_key_value_pair
-  # Implement this method so that it adds a key value pair to the hash created in create_olympics_hash
+puts olympics
+
+country = ["sydney", "athens", "Beijing", "London"]
+year = ["2000", "2004", "2008", "2012"]
+
+final_olympics = { }
+each_year = 0 
+country.each do |skolars|
+  final_olympics[country] = final_olympics[each_year]
+each_year += 1 
 end
 
-def iterate_through_hash
-  # Implement this method so that it iterates over the hash created in add_a_key_value_pair
-  # and puts each key value pair within the phrase "The _____ summer olympics took place in _____."
-end
+puts final_olympics
+  
 
-def iterate_through_keys
-  # Implement this method so that it converts the keys of the hash created in add_a_key_value_pair
-  # into uppercased Strings, creates a new array with these values, and then puts each upcase key in the CLI
-end
